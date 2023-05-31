@@ -21,6 +21,9 @@ window.addEventListener('click', function (event) {
 		if (event.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 0) {
 			// remove item from cart
 			event.target.closest('.cart-item').remove();
+
+			// cart checkout
+			toggleCartStatus();
 		}
 	}
 });

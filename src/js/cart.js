@@ -54,7 +54,10 @@ window.addEventListener('click', function (event) {
 			cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
 		}
 
-    // reset the counter
+		// reset the counter
 		card.querySelector('[data-counter]').innerText = '0';
+
+		// cart checkout
+		toggleCartStatus();
 	}
 });
