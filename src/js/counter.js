@@ -13,8 +13,14 @@ window.addEventListener('click', function (event) {
 	}
 
 	if (event.target.dataset.action === 'minus') {
-		if (parseInt(counter.innerText) > 0) counter.innerText = --counter.innerText;
+		if (parseInt(counter.innerText) > 0) {
+			counter.innerText = --counter.innerText;
+		}
+
+		// checking for the item in the shopping cart
+		if (event.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 0) {
+			// remove item from cart
+			event.target.closest('.cart-item').remove();
+		}
 	}
 });
-
-
