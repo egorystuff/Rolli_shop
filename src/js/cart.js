@@ -59,5 +59,8 @@ window.addEventListener('click', function (event) {
 
 		// cart checkout
 		toggleCartStatus();
+
+		// check cart value
+		caltCartPrice()
 	}
 });

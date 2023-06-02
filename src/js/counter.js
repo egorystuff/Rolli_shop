@@ -19,11 +19,19 @@ window.addEventListener('click', function (event) {
 
 		// checking for the item in the shopping cart
 		if (event.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 0) {
+			// check cart value
+			caltCartPrice();
+
 			// remove item from cart
 			event.target.closest('.cart-item').remove();
 
 			// cart checkout
 			toggleCartStatus();
 		}
+	}
+
+	if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
+		// check cart value
+		caltCartPrice();
 	}
 });
