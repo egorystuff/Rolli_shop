@@ -1,0 +1,22 @@
+{
+	"name": "rolli_shop",
+	"version": "1.0.0",
+	"description": "Online sushi store",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gh-pages -d src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/egorystuff/Rolli_shop.git"
+	},
+	"author": "Yahor Yankavets",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/egorystuff/Rolli_shop/issues"
+	},
+	"homepage": "https://github.com/egorystuff/Rolli_shop",
+	"devDependencies": {
+		"gh-pages": "^5.0.0"
+	}
+}
